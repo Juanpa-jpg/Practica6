@@ -1,4 +1,9 @@
 import {Box, Button, Card, CardActionArea, CardActions, CardContent, Typography} from "@mui/material";
+import Grid from "@mui/material/Grid";
+import * as React from "react";
+import {Link} from "react-router-dom";
+
+
 
 const PokemonCard = ({item}) =>{
     return (<Card sx={{ maxWidth: 345 }}>
@@ -20,8 +25,8 @@ const PokemonCard = ({item}) =>{
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
+                <Button size="small" color="primary" button component={Link} to="/detalle">
+                    Detalle
                 </Button>
             </CardActions>
         </Card>
